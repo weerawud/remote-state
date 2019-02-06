@@ -8,7 +8,7 @@ variable "prefix" {
 }
 variable "environment" {
     description = "stage enviroment"
-    default = "dev"
+    default = "production"
 }
 variable "profile" {
     description = "AWS profile"
