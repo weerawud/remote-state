@@ -6,7 +6,7 @@ variable "prefix" {
     description = "Prefix"
     default = "bluegreen" 
 }
-variable "enviroment" {
+variable "environment" {
     description = "stage enviroment"
     default = "dev"
 }

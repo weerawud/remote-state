@@ -1,17 +1,18 @@
 
-provider "aws" {
+/*provider "aws" {
   region ="${var.region}"
   profile = "${var.profile}"
 }
+*/
 resource "aws_s3_bucket" "remote_state" {
-    bucket = "${var.prefix}-remote-state-${var.enviroment}"
+    bucket = "${var.prefix}-remote-state-${var.environment}"
     acl = "authenticated-read"
     versioning = {
         enabled = true
     }
     tags = {
-        Name = "${var.prefix}-remote-state-${var.enviroment}"
-        Enviroment = "${var.enviroment}"
+        Name = "${var.prefix}-remote-state-${var.environment}"
+        Enviroment = "${var.environment}"
     }
     region = "${var.region}"
 }
